@@ -1,79 +1,72 @@
-html, body {
-  margin: 0;
+* {
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Karla", sans-serif;
+  margin: 0;
 }
 
 main {
-  padding: 8rem 10rem;
+  padding: 36px;
 }
 
 .header {
   display: flex;
   align-items: center;
-  height: 2rem;
+  height: 65px;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
   color: white;
-  padding: 13px;
+  padding: 20px;
 }
 
-.header--img {
-  height: 3rem;
-  margin-right: 10px;
+.header--image {
+  height: 100%;
+  margin-right: 6px;
 }
 
 .header--title {
-  font-size: 25px;
+  font-size: 1.25rem;
   margin-right: auto;
 }
 
 .header--project {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
 .form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
-  gap: 20px
+  gap: 17px;
+  margin-bottom: 17px;
 }
 
 .form--input {
   font-family: "Karla", sans-serif;
   border-radius: 5px;
   border: 1px solid #D5D4D8;
-  text-indent: 1px;
-  height: 3rem;
-  font-size: 20px;
+  text-indent: 5px;
 }
 
 .form--button {
-    grid-column: 1 / -1;
-    font-family: "Karla", sans-serif;
-    border-radius: 6px;
-    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-    color: white;
-    border: none;
-    cursor: pointer;
-    height: 52px;
-    font-size: 22px;
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-/* .meme--img {
-  width: 100%;
-  height: 36rem;
-} */
-
 .meme {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 37px;
+  position: relative;
+  text-align: center;
 }
 
 .meme--image {
-    max-width: 44rem;
-    height: 48rem;
-    border-radius: 3px;
+  max-width: 100%;
+  border-radius: 3px;
 }
 
 .meme--text {
@@ -102,16 +95,9 @@ main {
 }
 
 .bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 19rem;
-    font-size: 29px;
+  bottom: 0;
 }
 
 .top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 24rem;
+  top: 0;
 }
